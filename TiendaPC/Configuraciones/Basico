@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pc>
+    <cantAL>0</cantAL>
+    <cantDD>1</cantDD>
+    <cantFA>0</cantFA>
+    <cantGPU>1</cantGPU>
+    <cantGR>1</cantGR>
+    <cantMO>0</cantMO>
+    <cantMR>1</cantMR>
+    <cantMU>0</cantMU>
+    <cantPB>1</cantPB>
+    <cantPR>1</cantPR>
+    <cantRA>0</cantRA>
+    <cantTE>0</cantTE>
+    <cantTO>1</cantTO>
+    <cantVE>0</cantVE>
+    <DD>
+        <description>seagate 1tb sata3 7200 64mb barracuda</description>
+        <price>43.31</price>
+        <stock>182</stock>
+        <category>HDD</category>
+    </DD>
+    <GPU>
+        <description>gigabyte vga nvidia gt 610 2gb ddr3</description>
+        <price>36.69</price>
+        <stock>199</stock>
+        <category>GPU</category>
+    </GPU>
+    <GR>
+        <description>regrabadora dvdrw lg gh24nsd1 sata negra</description>
+        <price>11.98</price>
+        <stock>228</stock>
+        <category>DVD_WRITER</category>
+    </GR>
+    <MR>
+        <description>kingston ddr3 4gb pc1333 cl9 dimm sr x8</description>
+        <price>19.17</price>
+        <stock>7</stock>
+        <category>RAM</category>
+    </MR>
+    <nombre>Basico</nombre>
+    <PB>
+        <description>msi h81m e33 lga1150 2ddr3 hdmi usb3 sata3 matx</description>
+        <price>42.56</price>
+        <stock>11</stock>
+        <category>MOTHERBOARD</category>
+    </PB>
+    <PR>
+        <description>intel. core i5 4460 3.20ghz 1150 box</description>
+        <price>177.27</price>
+        <stock>26</stock>
+        <category>CPU</category>
+    </PR>
+    <precio>362.63</precio>
+    <precioString>362.63</precioString>
+    <TO>
+        <description>coolbox f800 caja atx usb3.0 500w</description>
+        <price>31.65</price>
+        <stock>24</stock>
+        <category>CASE</category>
+    </TO>
+</pc>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<listPCWrapper>
+    <PC>
+        <cantAL>0</cantAL>
+        <cantDD>1</cantDD>
+        <cantFA>1</cantFA>
+        <cantGPU>1</cantGPU>
+        <cantGR>1</cantGR>
+        <cantMO>0</cantMO>
+        <cantMR>1</cantMR>
+        <cantMU>0</cantMU>
+        <cantPB>1</cantPB>
+        <cantPR>1</cantPR>
+        <cantRA>0</cantRA>
+        <cantTE>0</cantTE>
+        <cantTO>1</cantTO>
+        <cantVE>1</cantVE>
+        <DD>
+            <description>seagate 1tb sata3 7200 64mb barracuda</description>
+            <price>43.31</price>
+            <stock>182</stock>
+            <category>HDD</category>
+        </DD>
+        <FA>
+            <description>tacens radix vii ag 600w pfc activo 14cm 80+silver</description>
+            <price>46.12</price>
+            <stock>1</stock>
+            <category>POWER_SUPPLY</category>
+        </FA>
+        <GPU>
+            <description>gigabyte gtx750ti oc gddr5 2gb 128bits 2dvi+2hdmi</description>
+            <price>117.02</price>
+            <stock>6</stock>
+            <category>GPU</category>
+        </GPU>
+        <GR>
+            <description>regrabadora dvdrw lg gh24nsd1 sata negra</description>
+            <price>11.98</price>
+            <stock>228</stock>
+            <category>DVD_WRITER</category>
+        </GR>
+        <MR>
+            <description>kingston 8gb 1600 ddr3 cl10 dimm hyperx furyser</description>
+            <price>34.05</price>
+            <stock>108</stock>
+            <category>RAM</category>
+        </MR>
+        <nombre>Trabajo</nombre>
+        <PB>
+            <description>asus placa base h81m p plus matx lga1150</description>
+            <price>46.45</price>
+            <stock>226</stock>
+            <category>MOTHERBOARD</category>
+        </PB>
+        <PR>
+            <description>intel i5.4690 3.50 3.90ghz lga1150 6mb box</description>
+            <price>202.23</price>
+            <stock>10</stock>
+            <category>CPU</category>
+        </PR>
+        <precio>570.17</precio>
+        <precioString>570.17</precioString>
+        <TO>
+            <description>nox caja semitorre atx hummer vx negra</description>
+            <price>39.01</price>
+            <stock>54</stock>
+            <category>CASE</category>
+        </TO>
+        <VE>
+            <description>cooler master refrig. hyper 212 evo intel amd</description>
+            <price>30.0</price>
+            <stock>1</stock>
+            <category>FAN</category>
+        </VE>
+    </PC>
+</listPCWrapper>

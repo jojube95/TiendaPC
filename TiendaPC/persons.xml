@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<listPCWrapper>
+    <Person>
+        <AL>
+            <description>woxter altavoces big bass 95 negro 2.0</description>
+            <price>22.81</price>
+            <stock>21</stock>
+            <category>SPEAKER</category>
+        </AL>
+        <cantAL>1</cantAL>
+        <cantDD>1</cantDD>
+        <cantFA>1</cantFA>
+        <cantGPU>1</cantGPU>
+        <cantGR>1</cantGR>
+        <cantMO>1</cantMO>
+        <cantMR>1</cantMR>
+        <cantMU>1</cantMU>
+        <cantPB>1</cantPB>
+        <cantPR>1</cantPR>
+        <cantRA>1</cantRA>
+        <cantTE>1</cantTE>
+        <cantTO>1</cantTO>
+        <cantVE>1</cantVE>
+        <DD>
+            <description>toshiba hdd 3.5 1tb 32mb sata3 7200rpm</description>
+            <price>39.17</price>
+            <stock>785</stock>
+            <category>HDD</category>
+        </DD>
+        <FA>
+            <description>tooq fa 700w atx v2.3 pfc activo 14cm. c.velocidad</description>
+            <price>32.89</price>
+            <stock>55</stock>
+            <category>POWER_SUPPLY</category>
+        </FA>
+        <GPU>
+            <description>gigabyte vga gtx 750 ti oc 2gb ddr5</description>
+            <price>110.66</price>
+            <stock>396</stock>
+            <category>GPU</category>
+        </GPU>
+        <GR>
+            <description>regrabadora dvdrw lg gh24nsd1 sata negra</description>
+            <price>11.98</price>
+            <stock>228</stock>
+            <category>DVD_WRITER</category>
+        </GR>
+        <MO>
+            <description>asus 21.5 vs228hr wled tn fhd 5ms vga+dvi+hdmi</description>
+            <price>89.09</price>
+            <stock>86</stock>
+            <category>SCREEN</category>
+        </MO>
+        <MR>
+            <description>kingston 8gb 1600 ddr3 cl10 dimm hyperx furyser</description>
+            <price>34.05</price>
+            <stock>108</stock>
+            <category>RAM</category>
+        </MR>
+        <MU>
+            <description>tacens anima acrm2 lector tarj  dni sim</description>
+            <price>7.85</price>
+            <stock>78</stock>
+            <category>MULTIREADER</category>
+        </MU>
+        <nombre>Prueba1</nombre>
+        <PB>
+            <description>gigabyte ga 78lmt usb3 am3 4ddr3 hdmi usb3.0 matx</description>
+            <price>55.95</price>
+            <stock>7</stock>
+            <category>MOTHERBOARD</category>
+        </PB>
+        <PR>
+            <description>intel. core i5 4460 3.20ghz 1150 box</description>
+            <price>177.27</price>
+            <stock>26</stock>
+            <category>CPU</category>
+        </PR>
+        <precio>676.19</precio>
+        <precioString>676.19</precioString>
+        <RA>
+            <description>raton logitech m175 id bulk</description>
+            <price>14.55</price>
+            <stock>17</stock>
+            <category>MOUSE</category>
+        </RA>
+        <TE>
+            <description>logitech mk270 combo teclado con raton optico 2.4g</description>
+            <price>23.39</price>
+            <stock>324</stock>
+            <category>KEYBOARD</category>
+        </TE>
+        <TO>
+            <description>unyka uk 6011 matx 500w negra</description>
+            <price>31.24</price>
+            <stock>103</stock>
+            <category>CASE</category>
+        </TO>
+        <VE>
+            <description>scythe refrig. katana 4 intel amd</description>
+            <price>25.29</price>
+            <stock>14</stock>
+            <category>FAN</category>
+        </VE>
+    </Person>
+    <Person>
+        <AL>
+            <description>tacens mars gaming altavoces 2.0 ms1 negro rojo</description>
+            <price>11.4</price>
+            <stock>287</stock>
+            <category>SPEAKER</category>
+        </AL>
+        <cantAL>1</cantAL>
+        <cantDD>1</cantDD>
+        <cantFA>1</cantFA>
+        <cantGPU>1</cantGPU>
+        <cantGR>1</cantGR>
+        <cantMO>1</cantMO>
+        <cantMR>1</cantMR>
+        <cantMU>1</cantMU>
+        <cantPB>1</cantPB>
+        <cantPR>1</cantPR>
+        <cantRA>1</cantRA>
+        <cantTE>1</cantTE>
+        <cantTO>1</cantTO>
+        <cantVE>1</cantVE>
+        <DD>
+            <description>w.digital 1tb 3.5 wd10ezex sata3 7200 64mb wd blue</description>
+            <price>45.79</price>
+            <stock>31</stock>
+            <category>HDD</category>
+        </DD>
+        <FA>
+            <description>unyka f.a. 700w gaming pfc pasivo 14cm atx v2.31</description>
+            <price>23.72</price>
+            <stock>55</stock>
+            <category>POWER_SUPPLY</category>
+        </FA>
+        <GPU>
+            <description>msi vga nvidia gtx 960 gaming 4gb ddr5</description>
+            <price>216.61</price>
+            <stock>38</stock>
+            <category>GPU</category>
+        </GPU>
+        <GR>
+            <description>samsung sh.224fb dvd.rw sata bulk sin soft negra</description>
+            <price>12.15</price>
+            <stock>43</stock>
+            <category>DVD_WRITER</category>
+        </GR>
+        <MO>
+            <description>acer 23.6 ka240hq 5ms 100m.1 300cd led dvi hdmi</description>
+            <price>120.08</price>
+            <stock>24</stock>
+            <category>SCREEN</category>
+        </MO>
+        <MR>
+            <description>memoria patriot signature line 2gb ddr2 800mhz psd</description>
+            <price>18.93</price>
+            <stock>2</stock>
+            <category>RAM</category>
+        </MR>
+        <MU>
+            <description>card reader interno tacens anima acr2 con usb3.0</description>
+            <price>6.94</price>
+            <stock>22</stock>
+            <category>MULTIREADER</category>
+        </MU>
+        <nombre>Prueba2</nombre>
+        <PB>
+            <description>msi a68hm p33 v2 fm2+ 2ddr3 dvi sata3 usb3.0 matx</description>
+            <price>42.31</price>
+            <stock>1</stock>
+            <category>MOTHERBOARD</category>
+        </PB>
+        <PR>
+            <description>intel core i3.4170 3.7ghz s1150 3mb</description>
+            <price>106.78</price>
+            <stock>25</stock>
+            <category>CPU</category>
+        </PR>
+        <precio>671.4</precio>
+        <precioString>671.4</precioString>
+        <RA>
+            <description>logitech raton m90 negro optico usb 910.001793</description>
+            <price>8.51</price>
+            <stock>5</stock>
+            <category>MOUSE</category>
+        </RA>
+        <TE>
+            <description>tacens levis teclado raton inalambrico blanco</description>
+            <price>25.04</price>
+            <stock>49</stock>
+            <category>KEYBOARD</category>
+        </TE>
+        <TO>
+            <description>unyka caja micro atx 500w uk3807 negra</description>
+            <price>24.96</price>
+            <stock>14</stock>
+            <category>CASE</category>
+        </TO>
+        <VE>
+            <description>arctic refr. alpine 11 gt r.2 775 1155 1156</description>
+            <price>8.18</price>
+            <stock>4</stock>
+            <category>FAN</category>
+        </VE>
+    </Person>
+</listPCWrapper>

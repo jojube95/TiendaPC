@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.BusquedaController">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="206.0" spacing="15.0">
+               <children>
+                  <Label fx:id="lMin" text="Precio mínimo:" />
+                  <Slider fx:id="sMin" />
+                  <Label fx:id="lMax" text="Precio maximo:" />
+                  <Slider fx:id="sMax" />
+                  <Label text="Descripción" />
+                  <TextField fx:id="tDesc" />
+                  <CheckBox fx:id="cSSD" layoutX="15.0" layoutY="229.0" mnemonicParsing="false" text="SSD" />
+                  <CheckBox fx:id="cDisp" mnemonicParsing="false" text="Disponible" />
+                  <Button fx:id="bBuscar" defaultButton="true" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+               </children>
+               <padding>
+                  <Insets bottom="25.0" left="5.0" right="5.0" top="25.0" />
+               </padding>
+            </VBox>
+            <VBox minHeight="350.0" minWidth="350.0" prefHeight="400.0" prefWidth="476.0">
+               <children>
+                  <TableView fx:id="tvTabla">
+                    <columns>
+                      <TableColumn fx:id="tcDesc" prefWidth="282.0" text="Descripcion" />
+                        <TableColumn fx:id="tcDisponibilidad" prefWidth="94.0" text="Disponibilidad" />
+                      <TableColumn fx:id="tcPrec" prefWidth="78.0" text="Precio" />
+                    </columns>
+                  </TableView>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="bAnyadir" mnemonicParsing="false" onAction="#anyadir" text="Añadir">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="bCancelar" mnemonicParsing="false" onAction="#cancelar" text="Cancelar">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

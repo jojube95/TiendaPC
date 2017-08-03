@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pc>
+    <cantAL>0</cantAL>
+    <cantDD>1</cantDD>
+    <cantFA>1</cantFA>
+    <cantGPU>1</cantGPU>
+    <cantGR>1</cantGR>
+    <cantMO>0</cantMO>
+    <cantMR>1</cantMR>
+    <cantMU>0</cantMU>
+    <cantPB>1</cantPB>
+    <cantPR>1</cantPR>
+    <cantRA>0</cantRA>
+    <cantTE>0</cantTE>
+    <cantTO>1</cantTO>
+    <cantVE>1</cantVE>
+    <DD>
+        <description>seagate hd 3.5 2tb sata3 6gb 64mb 7200rpm barracud</description>
+        <price>67.85</price>
+        <stock>300</stock>
+        <category>HDD</category>
+    </DD>
+    <FA>
+        <description>nox fuente alimentacion nx 650w atx</description>
+        <price>39.92</price>
+        <stock>40</stock>
+        <category>POWER_SUPPLY</category>
+    </FA>
+    <GPU>
+        <description>gigabyte vga nvidia gtx 960 wf oc 2gb ddr5</description>
+        <price>187.77</price>
+        <stock>91</stock>
+        <category>GPU</category>
+    </GPU>
+    <GR>
+        <description>regrabadora dvdrw lg gh24nsd1 sata negra</description>
+        <price>11.98</price>
+        <stock>228</stock>
+        <category>DVD_WRITER</category>
+    </GR>
+    <MR>
+        <description>kingston 8gb 1600 ddr3 cl10 dimm hyperx furyser</description>
+        <price>34.05</price>
+        <stock>108</stock>
+        <category>RAM</category>
+    </MR>
+    <nombre>Gaming</nombre>
+    <PB>
+        <description>asus q87m.e 1150 4ddr3 32gb vga+dvi+hdmi+dp 4usb3</description>
+        <price>87.44</price>
+        <stock>300</stock>
+        <category>MOTHERBOARD</category>
+    </PB>
+    <PR>
+        <description>intel. core i5 4460 3.20ghz 1150 box</description>
+        <price>177.27</price>
+        <stock>26</stock>
+        <category>CPU</category>
+    </PR>
+    <precio>691.82</precio>
+    <precioString>691.82</precioString>
+    <TO>
+        <description>zalman z9 u3 semitorre atx usb3.0 sin fuente</description>
+        <price>55.54</price>
+        <stock>1</stock>
+        <category>CASE</category>
+    </TO>
+    <VE>
+        <description>cooler master refrig. hyper 212 evo intel amd</description>
+        <price>30.0</price>
+        <stock>1</stock>
+        <category>FAN</category>
+    </VE>
+</pc>

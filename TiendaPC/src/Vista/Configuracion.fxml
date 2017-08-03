@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ConfiguracionController">
+   <children>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="14.0" prefWidth="700.0">
+               <children>
+                  <Label text="NOMBRE:">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtNombre">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <GridPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="52.0" minWidth="10.0" prefWidth="46.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="118.0" minWidth="10.0" prefWidth="91.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="126.0" minWidth="0.0" prefWidth="57.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="187.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="631.0" minWidth="10.0" prefWidth="192.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="66.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.0" minWidth="10.0" prefWidth="62.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Añadir">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Cantidad" GridPane.columnIndex="2">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Editar" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Componente" GridPane.columnIndex="1" />
+                  <Label text="Sin IVA" GridPane.columnIndex="5" />
+                  <Label text="Con IVA" GridPane.columnIndex="6" />
+                  <Button fx:id="addPB" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaMOTHERBOARD" text="+" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addPR" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaCPU" text="+" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addMR" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaRAM" text="+" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addGPU" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaGPU" text="+" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addDD" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaHDD" text="+" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addTO" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaCASE" text="+" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addTE" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaKEYBOARD" text="+" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addRA" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaMOUSE" text="+" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addMO" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaSCREEN" text="+" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addAL" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaSPEAKER" text="+" GridPane.rowIndex="11">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addMU" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaMULTIREADER" text="+" GridPane.rowIndex="12">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addGR" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaDVD_WRITER" text="+" GridPane.rowIndex="13">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addVE" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaFAN" text="+" GridPane.rowIndex="14">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button fx:id="addFA" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onAction="#irABusquedaPOWER_SUPPLY" text="+" GridPane.rowIndex="15">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <TextField fx:id="cantPB" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantPR" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantMR" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantGPU" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantDD" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantTO" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantTE" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantRA" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantMO" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantAL" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantMU" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantGR" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="13">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantVE" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="14">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <TextField fx:id="cantFA" alignment="CENTER_RIGHT" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="20.0" prefWidth="50.0" promptText="0" GridPane.columnIndex="2" GridPane.rowIndex="15">
+                     <GridPane.margin>
+                        <Insets left="5.0" />
+                     </GridPane.margin>
+                  </TextField>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="anyPB" mnemonicParsing="false" onAction="#sumaPB" text="+" />
+                        <Button fx:id="resPB" mnemonicParsing="false" onAction="#restaPB" text="-" />
+                        <Button fx:id="edPB" mnemonicParsing="false" onAction="#irABusquedaMOTHERBOARD" text="Editar" />
+                        <Button fx:id="boPB" mnemonicParsing="false" onAction="#borrarPB" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <Button fx:id="anyPR" mnemonicParsing="false" onAction="#sumaPR" text="+" />
+                        <Button fx:id="resPR" mnemonicParsing="false" onAction="#restaPR" text="-" />
+                        <Button fx:id="edPR" mnemonicParsing="false" onAction="#irABusquedaCPU" text="Editar" />
+                        <Button fx:id="boPR" mnemonicParsing="false" onAction="#borrarPR" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <Button fx:id="anyMR" mnemonicParsing="false" onAction="#sumaMR" text="+" />
+                        <Button fx:id="resMR" mnemonicParsing="false" onAction="#restaMR" text="-" />
+                        <Button fx:id="edMR" mnemonicParsing="false" onAction="#irABusquedaRAM" text="Editar" />
+                        <Button fx:id="boMR" mnemonicParsing="false" onAction="#borrarMR" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <children>
+                        <Button fx:id="anyGPU" mnemonicParsing="false" onAction="#sumaGPU" text="+" />
+                        <Button fx:id="resGPU" mnemonicParsing="false" onAction="#restaGPU" text="-" />
+                        <Button fx:id="edGPU" mnemonicParsing="false" onAction="#irABusquedaGPU" text="Editar" />
+                        <Button fx:id="boGPU" mnemonicParsing="false" onAction="#borrarGPU" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <children>
+                        <Button fx:id="anyDD" mnemonicParsing="false" onAction="#sumaDD" text="+" />
+                        <Button fx:id="resDD" mnemonicParsing="false" onAction="#restaDD" text="-" />
+                        <Button fx:id="edDD" mnemonicParsing="false" onAction="#irABusquedaHDD" text="Editar" />
+                        <Button fx:id="boDD" mnemonicParsing="false" onAction="#borrarDD" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <children>
+                        <Button fx:id="anyTO" mnemonicParsing="false" onAction="#sumaTO" text="+" />
+                        <Button fx:id="resTO" mnemonicParsing="false" onAction="#restaTO" text="-" />
+                        <Button fx:id="edTO" mnemonicParsing="false" onAction="#irABusquedaCASE" text="Editar" />
+                        <Button fx:id="boTO" mnemonicParsing="false" onAction="#borrarTO" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                     <children>
+                        <Button fx:id="anyTE" mnemonicParsing="false" onAction="#sumaTE" text="+" />
+                        <Button fx:id="resTE" mnemonicParsing="false" onAction="#restaTE" text="-" />
+                        <Button fx:id="edTE" mnemonicParsing="false" onAction="#irABusquedaKEYBOARD" text="Editar" />
+                        <Button fx:id="boTE" mnemonicParsing="false" onAction="#borrarTE" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                     <children>
+                        <Button fx:id="anyRA" mnemonicParsing="false" onAction="#sumaRA" text="+" />
+                        <Button fx:id="resRA" mnemonicParsing="false" onAction="#restaRA" text="-" />
+                        <Button fx:id="edRA" mnemonicParsing="false" onAction="#irABusquedaMOUSE" text="Editar" />
+                        <Button fx:id="boRA" mnemonicParsing="false" onAction="#borrarRA" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                     <children>
+                        <Button fx:id="anyMO" mnemonicParsing="false" onAction="#sumaMO" text="+" />
+                        <Button fx:id="resMO" mnemonicParsing="false" onAction="#restaMO" text="-" />
+                        <Button fx:id="edMO" mnemonicParsing="false" onAction="#irABusquedaSCREEN" text="Editar" />
+                        <Button fx:id="boMO" mnemonicParsing="false" onAction="#borrarMO" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="11">
+                     <children>
+                        <Button fx:id="anyAL" mnemonicParsing="false" onAction="#sumaAL" text="+" />
+                        <Button fx:id="resAL" mnemonicParsing="false" onAction="#restaAL" text="-" />
+                        <Button fx:id="edAL" mnemonicParsing="false" onAction="#irABusquedaSPEAKER" text="Editar" />
+                        <Button fx:id="boAL" mnemonicParsing="false" onAction="#borrarAL" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="12">
+                     <children>
+                        <Button fx:id="anyMU" mnemonicParsing="false" onAction="#sumaMU" text="+" />
+                        <Button fx:id="resMU" mnemonicParsing="false" onAction="#restaMU" text="-" />
+                        <Button fx:id="edMU" mnemonicParsing="false" onAction="#irABusquedaMULTIREADER" text="Editar" />
+                        <Button fx:id="boMU" mnemonicParsing="false" onAction="#borrarMU" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="13">
+                     <children>
+                        <Button fx:id="anyGR" mnemonicParsing="false" onAction="#sumaGR" text="+" />
+                        <Button fx:id="resGR" mnemonicParsing="false" onAction="#restaGR" text="-" />
+                        <Button fx:id="edGR" mnemonicParsing="false" onAction="#irABusquedaDVD_WRITER" text="Editar" />
+                        <Button fx:id="boGR" mnemonicParsing="false" onAction="#borrarGR" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="14">
+                     <children>
+                        <Button fx:id="anyVE" mnemonicParsing="false" onAction="#sumaVE" text="+" />
+                        <Button fx:id="resVE" mnemonicParsing="false" onAction="#restaVE" text="-" />
+                        <Button fx:id="edVE" mnemonicParsing="false" onAction="#irABusquedaFAN" text="Editar" />
+                        <Button fx:id="boVE" mnemonicParsing="false" onAction="#borrarVE" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="15">
+                     <children>
+                        <Button fx:id="anyFA" mnemonicParsing="false" onAction="#sumaFA" text="+" />
+                        <Button fx:id="resFA" mnemonicParsing="false" onAction="#restaFA" text="-" />
+                        <Button fx:id="edFA" mnemonicParsing="false" onAction="#irABusquedaPOWER_SUPPLY" text="Editar" />
+                        <Button fx:id="boFA" mnemonicParsing="false" onAction="#borrarFA" text="Borrar" />
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </HBox>
+                  <Label text="PLACA BASE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="PROCESADOR" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="MEMÓRIA RAM" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label text="GRÁFICA" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="DISCO DURO" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label text="TORRE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <Label text="TECLADO" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <Label text="RATÓN" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <Label text="MONITOR" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <Label text="ALTAVOCES" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+                  <Label text="MULTILECTORES" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+                  <Label text="GRABADORA" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <Label text="VENTILADOR" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                  <Label text="FUENTE ALIM" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+                  <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="16">
+                     <children>
+                        <Button fx:id="bGuardar" defaultButton="true" mnemonicParsing="false" onAction="#pulsarGuardar" text="Guardar" />
+                        <Button fx:id="bCancelar" cancelButton="true" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+                        <Button fx:id="bReset" mnemonicParsing="false" onAction="#resetear" text="Reset" />
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </HBox>
+                  <Label fx:id="sivaPB" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaPB" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaPR" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaPR" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaMR" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaGPU" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaGPU" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaMR" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaDD" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaTO" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaDD" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaTO" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaTE" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaTE" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaRA" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaRA" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaMO" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaMO" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="10">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaAL" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="11">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaAL" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="11">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaMU" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="12">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaMU" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="12">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaGR" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="13">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaGR" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="13">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaVE" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="14">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaVE" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="14">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="sivaFA" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="5" GridPane.rowIndex="15">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="civaFA" alignment="CENTER_RIGHT" contentDisplay="RIGHT" disable="true" text="0 €" textAlignment="RIGHT" GridPane.columnIndex="6" GridPane.rowIndex="15">
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="totalciva" text="0 €" GridPane.columnIndex="6" GridPane.rowIndex="16">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="totalsiva" text="0 €" GridPane.columnIndex="5" GridPane.rowIndex="16">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="lPB" text="OBLIGATIORIO" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Label fx:id="lPR" text="OBLIGATIORIO" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Label fx:id="lMR" text="OBLIGATIORIO" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <Label fx:id="lGPU" text="OBLIGATIORIO" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Label fx:id="lDD" text="OBLIGATIORIO" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                  <Label fx:id="lTO" text="OBLIGATIORIO" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                  <Label fx:id="lTE" text="OPCIONAL" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                  <Label fx:id="lRA" text="OPCIONAL" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                  <Label fx:id="lMO" text="OPCIONAL" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+                  <Label fx:id="lAL" text="OPCIONAL" GridPane.columnIndex="4" GridPane.rowIndex="11" />
+                  <Label fx:id="lMU" text="OPCIONAL" GridPane.columnIndex="4" GridPane.rowIndex="12" />
+                  <Label fx:id="lGR" text="OPCIONAL" GridPane.columnIndex="4" GridPane.rowIndex="13" />
+                  <Label fx:id="lVE" text="OPCIONAL" GridPane.columnIndex="4" GridPane.rowIndex="14" />
+                  <Label fx:id="lFA" text="OPCIONAL" GridPane.columnIndex="4" GridPane.rowIndex="15" />
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

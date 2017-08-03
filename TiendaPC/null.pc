@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pc>
+    <cantAL>0</cantAL>
+    <cantDD>1</cantDD>
+    <cantFA>0</cantFA>
+    <cantGPU>1</cantGPU>
+    <cantGR>0</cantGR>
+    <cantMO>0</cantMO>
+    <cantMR>1</cantMR>
+    <cantMU>0</cantMU>
+    <cantPB>1</cantPB>
+    <cantPR>1</cantPR>
+    <cantRA>0</cantRA>
+    <cantTE>0</cantTE>
+    <cantTO>1</cantTO>
+    <cantVE>0</cantVE>
+    <DD>
+        <description>hd 3 5 1tb s ata 3 wd 64mb desktop blue</description>
+        <price>43.55</price>
+        <stock>202</stock>
+        <category>HDD</category>
+    </DD>
+    <GPU>
+        <description>gigabyte vga nvidia gtx 950 wf oc 2gb ddr5</description>
+        <price>149.17</price>
+        <stock>51</stock>
+        <category>GPU</category>
+    </GPU>
+    <MR>
+        <description>kingston ddr3 8gb 1600mhz hyperx fury blue cl10</description>
+        <price>39.92</price>
+        <stock>63</stock>
+        <category>RAM</category>
+    </MR>
+    <nombre>qaswde</nombre>
+    <PB>
+        <description>asrock fm2a58m.vg3+ r2.0 2ddr3 vga gblan matx</description>
+        <price>39.5</price>
+        <stock>5</stock>
+        <category>MOTHERBOARD</category>
+    </PB>
+    <PR>
+        <description>intel core i3.4170 3.7ghz s1150 3mb</description>
+        <price>106.78</price>
+        <stock>25</stock>
+        <category>CPU</category>
+    </PR>
+    <precio>414.54</precio>
+    <precioString>414.54</precioString>
+    <TO>
+        <description>nox atx coolbay sx sin fuente audiohd usb3.0 negra</description>
+        <price>35.62</price>
+        <stock>10</stock>
+        <category>CASE</category>
+    </TO>
+</pc>
